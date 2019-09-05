@@ -31,6 +31,6 @@ class EndGame {
     fill(255);
     textSize(24);
     textAlign(CENTER);
-    text("!Vencedor!", 350, 250);
+    text("Vencedor!", 350, 250);
   }
 }
