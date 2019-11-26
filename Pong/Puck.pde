@@ -4,6 +4,8 @@ class Puck {
   float xspeed;
   float yspeed;
   float radius = 10;
+  
+  PImage bola;
 
   float contador = 0;
 

@@ -26,7 +26,7 @@ class MainMenu {
     text("S", 20, 328);
     text("O", 680, 190);
     text("K", 680, 328);
-    text("Precine 'N' para comecar", 350, 250);
+    text("Pressione 'N' para comecar", 350, 250);
     LeeryDig();
   }
 
@@ -47,11 +47,11 @@ class MainMenu {
     ellipse(40, 20, 18, 18);
 
     fill(#ffffff);
-    textAlign(LEFT);
+    textAlign(CENTER);
     textSize(14);
-    text("feito por - ", 85, 30);
-    fill(#ffff00);
-    text("LeeryDig ", 162, 30);
+    text("Guilherme A Cruz : 21232993", 350, 400);
+    text("Bruno Feltre : 20776159 ", 350, 420);
+    text("2019 - DEGAMON02A", 350, 440);
     
     stroke(#ffffff);
   }

@@ -9,6 +9,8 @@ EndGame endGame;
 
 boolean isGame = false;
 
+PImage field;
+
 int leftScore = 0;
 int rightScore = 0;
 color winning = #ffffff;
@@ -25,6 +27,8 @@ void setup() {
   right = new Paddle(false);
   menu = new MainMenu();
   endGame = new EndGame();
+  
+  field = loadImage("campo.jpeg");
 }
 
 void draw() {
@@ -55,6 +59,7 @@ void showEndGame() {
 
 void runGame() {
   background(0);
+  image(field, 0, 0, 700, 500);
 
   puck.checkPaddleLeft(left);
   puck.checkPaddleRight(right);
@@ -65,6 +70,7 @@ void runGame() {
   }
 
   for (int x = 0; x < width; x+=10) {
+    tint(winning);
     stroke(winning);
     line(x, 20, x+5, 20);
     line(x, 480, x+5, 480);
